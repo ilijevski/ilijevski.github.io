@@ -65,11 +65,11 @@
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
 	width: 100%;
-	height: 100%;
+	height: 65vh;
 	position: relative
 }
 @media screen and (max-width: 1750px) {
-	.swiper-slide {height: 42.7vh}
+	.swiper-slide {height: 65vh}
 }
 
 .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {

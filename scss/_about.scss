@@ -12,6 +12,7 @@
 		}
 		.icon {
 			font-size: 40px;
+			width: 100px;
 			color: $main-theme-color;
 		}
 		&-single {
@@ -73,7 +74,7 @@
 		}
 	}
 	&-black-box {
-		min-height: 45vh;
+		min-height: 60vh;
 		background: rgba(0, 0, 0, 0.9);
 		color: white !important;
 		padding: 60px;
@@ -86,7 +87,7 @@
 		}
 	}
 	&-white-box {
-		min-height: 47vh;
+		min-height: 55vh;
 		background: rgba(255, 255, 255, 0.9);
 		color: black !important;
 		padding: 60px;

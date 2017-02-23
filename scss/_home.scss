@@ -1,6 +1,5 @@
 .home {
 	@extend %section-padding;
-	background: url('../img/home.jpg') no-repeat scroll center center / cover $main-light-color;
 	position: relative;
 
 	@include smartphone {

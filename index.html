@@ -39,7 +39,7 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a class="navbar-brand" href="#"> <img src="img/sigma-header.png" alt="logo"> </a>
+				<a class="navbar-brand" href="#"> <img src="img/sigma-logo.png" alt="logo"> </a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
@@ -47,7 +47,7 @@
 					<li><a href="#property-solutions">Property Solutions</a></li>
 					<li><a href="#design">Design</a></li>
 					<li><a href="#industries">Industries</a></li>
-					<li><a href="#oprotunities">Oprotunities</a></li>
+					<li><a href="#who">Who we are</a></li>
 					<li><a href="#contact">contact</a></li>
 				</ul>
 			</div>
@@ -57,12 +57,26 @@
 	<section class="home section image-slider" id="home">
 		<div class="home-slider text-center">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img class="container" src="img/sigma-logo.png" alt="sigma pros logo">
-					<h3 class="home-slider-title-main white-color">Welcome to the SigmaPros family of companies.</h3>
-					<a class="arrow bounce text-center" href="#property-solutions"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
+				<div class="swiper-slide" style="background: url('img/slider/slide(1).jpg');">
+					<a class="arrow bounce text-center" href="#products"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
 				</div>
+
+				<div class="swiper-slide" style="background: url('img/slider/slide(2).jpg');">
+					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
+				</div>
+
+				<div class="swiper-slide" style="background: url('img/slider/slide(3).jpg');">
+					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
+				</div>
+
+				<div class="swiper-slide" style="background: url('img/slider/slide(4).jpg');">
+					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
+				</div>
+
 			</div>
+			<div class="home-pagination"></div>
+			<div class="home-slider-next right-arrow-negative"> <span class="ti-arrow-right"></span> </div>
+			<div class="home-slider-prev left-arrow-negative"> <span class="ti-arrow-left"></span> </div>
 		</div>
 	</section>
 
@@ -73,7 +87,7 @@
 
 					<!-- SINGLE COUNTER ITEM -->
 					<div class="col-md-4 wow fadeInLeft about-counter-single" data-wow-delay="0.3s" data-wow-duration="1s" data-wow-offset="0">
-						<div class="counter dark-color"> <span class="ti-paint-roller icon"></span>
+						<div class="counter dark-color"><img class="icon" src="img/property-solutions-icon.png" desc="created by Mark Hammar from Noun Project"/>
 							<h3>Sigma <br/>Property Solutions</h3>
 							<a href="#property-solutions" class="btn btn-default">more</a>
 						</div>
@@ -82,7 +96,7 @@
 
 					<!-- SINGLE COUNTER ITEM -->
 					<div class="col-md-4 wow fadeInLeft about-counter-single" data-wow-delay="0.4s" data-wow-duration="1s" data-wow-offset="0">
-						<div class="counter dark-color"> <span class="ti-brush icon"></span>
+						<div class="counter dark-color"><img class="icon" src="img/design-icon.png" desc="created by Mark Hammar from Noun Project"/>
 							<h3>Sigma <br/>Design</h3>
 							<a href="#design" class="btn btn-default">more</a>
 						</div>
@@ -91,7 +105,7 @@
 
 					<!-- SINGLE COUNTER ITEM -->
 					<div class="col-md-4 wow fadeInLeft about-counter-single" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="0">
-						<div class="counter dark-color"> <span class="ti-ruler-pencil icon"></span>
+						<div class="counter dark-color"><img class="icon" src="img/industries-icon.png" desc="created by Mark Hammar from Noun Project"/>
 							<h3>Sigma <br/>Industries</h3>
 							<a href="#industries" class="btn btn-default">more</a>
 						</div>
@@ -359,6 +373,7 @@
 
 	<script src="js/vendor/wow.js"></script>
 	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="js/vendor/swiper.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/jquery.countTo.js"></script>
 	<script src="js/vendor/jquery.inview.js"></script>
