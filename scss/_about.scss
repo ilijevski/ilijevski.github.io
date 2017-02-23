@@ -1,0 +1,105 @@
+.about {
+
+	&-counter {
+		@include desktop {
+			padding: $padding-large 0;
+		}
+		@include tablet {
+			padding: $padding-large 0;
+		}
+		@include medium-tablet {
+			padding: 0;
+		}
+		.icon {
+			font-size: 40px;
+			color: $main-theme-color;
+		}
+		&-single {
+			border-right: 1px solid rgba($main-gray, 0.5);
+
+			div > h3 {
+				height: 55px;
+			}
+
+			@include medium-tablet {
+				border-right: none;
+				border-bottom: 1px solid rgba($main-gray, 0.5);
+				margin-bottom: $margin-base;
+
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+			@include smartphone {
+				border-right: none;
+				border-bottom: 1px solid rgba($main-gray, 0.5);
+				margin-bottom: $margin-base;
+
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+
+		}
+		&-single:last-child {
+				border-right: 0;
+		}
+
+		.counter {
+			@include medium-tablet {
+				padding: $padding-medium 0;
+			}
+			@include smartphone {
+				padding: $padding-medium 0;
+			}
+		}
+	}
+	&-background {
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		float: left;
+		z-index: 999;
+		position: relative;
+
+		&-1 {
+			background-image: url('../img/property-solutions.jpg');
+		}
+		&-2 {
+			background-color: #fff;
+		}
+		&-3 {
+			background-image: url('../img/industries.jpg');
+		}
+	}
+	&-black-box {
+		min-height: 45vh;
+		background: rgba(0, 0, 0, 0.9);
+		color: white !important;
+		padding: 60px;
+		padding-top: 135px;
+		padding-bottom: 90px;
+		text-align: center;
+
+		p {
+			color: white !important;
+		}
+	}
+	&-white-box {
+		min-height: 47vh;
+		background: rgba(255, 255, 255, 0.9);
+		color: black !important;
+		padding: 60px;
+		padding-bottom: 90px;
+		text-align: center;
+
+		p {
+			color: black !important;
+		}
+	}
+	p {
+		max-width: 500px;
+		margin: $margin-medium auto;
+		opacity: 0.6;
+	}
+}
