@@ -1,7 +1,7 @@
 .contact {
 	@extend %section-padding;
-			background: url('../img/footer-bg.jpg') no-repeat scroll center center / cover $main-light-color;
-	
+			background: url('../img/contact.jpg') no-repeat scroll center center / cover $main-light-color;
+
 
 	&-with-map {
 		padding-bottom: 0;
@@ -44,6 +44,14 @@
 			top: 5px;
 			color: $main-theme-color;
 			line-height: 40px;
+		}
+	}
+	.looking-for-something-title {
+		@include smartphone {
+			display: none;
+		}
+		@include medium-tablet {
+			display: none;
 		}
 	}
 	.google-maps > div {

@@ -20,7 +20,7 @@ ul, li {
     list-style: none;
 }
 p {
-    font-size: 18px
+    font-size: 19px
 }
 a, .btn {
     transition: all 100ms ease-in-out;
@@ -105,7 +105,7 @@ button.close, .close {
     border: none;
     box-shadow: none;
     background: none;
-    border-bottom: 2px solid $main-gray;
+    border-bottom: 2px solid #262626;
 
     &:focus {
         box-shadow: none;

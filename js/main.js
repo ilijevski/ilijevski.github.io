@@ -158,6 +158,28 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
 
 });
 
+//navbar-brand
+$(".navbar-brand").on('click', function(e) {
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   console.log(this.hash);
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(this.hash).offset().top
+     }, 300, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+
 // about
 $("#about-counter > div > div > div > div > a").on('click', function(e) {
    // prevent default anchor click behavior
@@ -205,9 +227,6 @@ function initialize() {
         position: mapAddress,
         map: map,
     });
-
-    var usRoadMapType = new google.maps.StyledMapType(
-        roadAtlasStyles, styledMapOptions);
 
 }
 

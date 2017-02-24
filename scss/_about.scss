@@ -65,17 +65,21 @@
 
 		&-1 {
 			background-image: url('../img/property-solutions.jpg');
+			background-position: center;
+	    background-size: cover;
 		}
 		&-2 {
 			background-color: #fff;
 		}
 		&-3 {
 			background-image: url('../img/industries.jpg');
+			background-position: center;
+	    background-size: cover;
 		}
 	}
 	&-black-box {
 		min-height: 60vh;
-		background: rgba(0, 0, 0, 0.9);
+		background: rgba(0, 0, 0, 0.8);
 		color: white !important;
 		padding: 60px;
 		padding-top: 135px;
@@ -88,7 +92,7 @@
 	}
 	&-white-box {
 		min-height: 55vh;
-		background: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.8);
 		color: black !important;
 		padding: 60px;
 		padding-bottom: 90px;
@@ -101,6 +105,6 @@
 	p {
 		max-width: 500px;
 		margin: $margin-medium auto;
-		opacity: 0.6;
+		opacity: 0.9;
 	}
 }
