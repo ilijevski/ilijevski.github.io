@@ -3907,7 +3907,8 @@ button.close, .close {
   color: #000 !important; }
 
 .dark-color {
-  color: #262626 !important; }
+  color: #262626 !important;
+  font-weight: 400; }
 
 .modal-content {
   float: left;
