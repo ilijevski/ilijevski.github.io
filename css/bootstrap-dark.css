@@ -2439,7 +2439,7 @@ output {
   padding-top: 7px;
   font-size: 15px;
   line-height: 1.42857;
-  color: #ef2824; }
+  color: #262626; }
 
 .form-control {
   display: block;
@@ -2448,7 +2448,7 @@ output {
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857;
-  color: #ef2824;
+  color: #262626;
   background-color: rgba(239, 40, 36, 0.2);
   background-image: none;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -3494,7 +3494,7 @@ tbody.collapse.in {
   font-size: 15px;
   font-weight: normal;
   line-height: 1;
-  color: #ef2824;
+  color: #262626;
   text-align: center;
   background-color: white;
   border: 1px solid rgba(255, 255, 255, 0);
