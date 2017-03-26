@@ -3863,7 +3863,7 @@ a:hover, a:active, a:focus {
       margin-left: 0 !important; } }
 
 button.close, .close {
-  background: #262626;
+  background: #252525;
   color: #ef2824;
   cursor: pointer;
   font-size: 20px !important;
@@ -3891,7 +3891,7 @@ button.close, .close {
   border: none;
   box-shadow: none;
   background: none;
-  border-bottom: 2px solid #262626;
+  border-bottom: 2px solid #252525;
   opacity: 0.8; }
   .form-control:focus {
     box-shadow: none;
@@ -4004,7 +4004,7 @@ body.modal-open {
       transform: translateX(-50%); }
   .home-slider-title-main {
     color: #252525;
-    background: rgba(22, 22, 22, 0.7);
+    background: rgba(22, 22, 22, 0.4);
     min-width: 100%;
     min-height: 100%;
     position: relative;
