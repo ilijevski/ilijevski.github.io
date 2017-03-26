@@ -4756,7 +4756,7 @@ body.modal-open {
   float: left;
   width: 100%;
   padding: 15px 0;
-  color: #252525; }
+  background-color: #252525; }
   .footer-logo {
     margin: 0 0 20px 0;
     width: 150px;
