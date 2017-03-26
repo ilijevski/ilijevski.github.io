@@ -3769,7 +3769,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 .carousel {
   width: 100%;
   float: left;
-  background: #262626;
+  background: #252525;
   text-align: center;
   padding: 15px 0 0; }
   .carousel-indicators {
@@ -3777,7 +3777,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     margin: 0;
     padding: 30px 0 15px 0;
     float: left;
-    background: #262626;
+    background: #252525;
     width: 100%;
     text-align: center;
     left: 0;
@@ -3984,7 +3984,7 @@ body.modal-open {
       transform: translateX(-50%); }
   .home-slider-title-small {
     font-size: 14px;
-    color: #262626;
+    color: #252525;
     opacity: 1;
     max-width: 600px;
     margin: 0 auto;
@@ -4003,7 +4003,7 @@ body.modal-open {
       left: 50%;
       transform: translateX(-50%); }
   .home-slider-title-main {
-    color: #262626;
+    color: #252525;
     background: rgba(22, 22, 22, 0.7);
     min-width: 100%;
     min-height: 100%;
@@ -4083,15 +4083,15 @@ body.modal-open {
 
 .navbar {
   border: none;
-  background: #262626;
+  background: #252525;
   text-align: center; }
   .navbar a {
     padding: 5px 15px;
-    color: #262626;
+    color: #252525;
     font-family: "Lato", sans-serif;
     font-weight: 400; }
   .navbar-brand {
-    color: #262626;
+    color: #252525;
     font-family: "Lato", sans-serif; }
     .navbar-brand span {
       color: #ef2824; }
@@ -4254,8 +4254,13 @@ body.modal-open {
 .about .people {
   padding-bottom: 60px; }
   .about .people .about-white-box {
-    padding-bottom: 0;
-    margin-bottom: -40px; }
+    padding-bottom: 0px;
+    margin-top: -57px;
+    padding-top: 62px; }
+  .about .people .about-black-box {
+    background: #000;
+    padding-bottom: 199px;
+    margin-bottom: -60px; }
 @media (min-width: 1200px) {
   .about-counter {
     padding: 60px 0; } }
@@ -4348,7 +4353,7 @@ body.modal-open {
     display: inline-block;
     font-size: 14px;
     text-align: center;
-    background: #262626;
+    background: #252525;
     padding: 15px;
     width: 20%; }
     @media (max-width: 479px) {
@@ -4376,12 +4381,12 @@ body.modal-open {
   text-align: center; }
 
 .testimonials {
-  background: url("../img/testimonials.jpg") no-repeat scroll center center/cover #262626; }
+  background: url("../img/testimonials.jpg") no-repeat scroll center center/cover #252525; }
   .testimonials-container {
     max-width: 700px;
     margin: 40px auto 0;
     overflow: visible;
-    background: #262626;
+    background: #252525;
     padding: 15px 60px;
     border-top: 1px solid #333; }
   .testimonials-slider {
@@ -4416,7 +4421,7 @@ body.modal-open {
 
 .post-list {
   position: relative;
-  background: url("../img/news.jpg") no-repeat scroll center center/cover #262626; }
+  background: url("../img/news.jpg") no-repeat scroll center center/cover #252525; }
 @media (max-width: 479px) {
   .post-slider {
     margin: 0 15px;
@@ -4478,7 +4483,7 @@ body.modal-open {
   .post-entry-modal {
     padding: 30px;
     float: left;
-    background: #262626;
+    background: #252525;
     margin-bottom: 0 !important; }
 
 .timeline {
@@ -4699,7 +4704,7 @@ body.modal-open {
       color: #aaa; }
 
 .contact {
-  background: url("../img/contact.jpg") no-repeat scroll center center/cover #262626; }
+  background: url("../img/contact.jpg") no-repeat scroll center center/cover #252525; }
   .contact-with-map {
     padding-bottom: 0; }
   .contact-form {
@@ -4750,7 +4755,8 @@ body.modal-open {
   min-height: auto;
   float: left;
   width: 100%;
-  padding: 15px 0; }
+  padding: 15px 0;
+  color: #252525; }
   .footer-logo {
     margin: 0 0 20px 0;
     width: 150px;
@@ -4789,7 +4795,7 @@ body.modal-open {
       display: block; }
     .product-list-special-price {
       border-radius: 100px;
-      color: #262626;
+      color: #252525;
       font-size: 12px;
       left: 0;
       padding: 0 5px;
@@ -4920,7 +4926,7 @@ body.modal-open {
     margin-top: 0;
     width: 70px; }
   .product-slide .carousel-indicators img {
-    border: 2px solid #262626;
+    border: 2px solid #252525;
     float: left;
     height: auto;
     left: 0;
@@ -4945,7 +4951,7 @@ body.modal-open {
   float: left;
   position: relative;
   margin-bottom: 1px;
-  background: #262626;
+  background: #252525;
   padding: 10px;
   text-align: left; }
   .cart-item-name {
@@ -5081,7 +5087,7 @@ body.modal-open {
     transform: scale(1);
     opacity: 0; } }
 .custom-radio label::before {
-  background-color: #262626;
+  background-color: #252525;
   border: 2px solid #ef2824;
   border-radius: 50%;
   content: "";
@@ -5108,7 +5114,7 @@ body.modal-open {
   .dark-theme p {
     color: #fff; }
   .dark-theme .contact.section {
-    background: #262626 none repeat scroll 0 0 !important; }
+    background: #252525 none repeat scroll 0 0 !important; }
   .dark-theme .carousel-indicators {
     background: none; }
   .dark-theme .carousel {
