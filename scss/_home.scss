@@ -57,6 +57,14 @@
 				&.inverted {
 					color: $main-dark-color;
 				}
+				@include tablet {
+			    padding: 20vh 10px 0px;
+					font-size: 36px;
+				}
+				@include smartphone {
+			    padding: 20vh 10px 0px;
+					font-size: 30px;
+				}
 			}
 		}
 		.swiper-slide {
