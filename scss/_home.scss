@@ -48,10 +48,11 @@
 			}
 			&-main {
 				color: $main-light-color;
-				max-width: 600px;
-				margin: 0 auto $margin-medium;
+		    background: rgba(22,22,22,0.7);
+				min-width: 100%;
+				min-height: 100%;
 				position: relative;
-				padding: 0 $padding-medium * 1.5;
+				padding: 20vh;
 
 				&.inverted {
 					color: $main-dark-color;
@@ -59,7 +60,9 @@
 			}
 		}
 		.swiper-slide {
-			padding: 0 $padding-base;
+		}
+		.dark-slide {
+			background-color: rgba(22, 22, 22, 0.4);
 		}
 	}
 	&.image-slider {
@@ -70,14 +73,16 @@
 		.home-slider {
 		}
 		.swiper-slide {
-			padding: 8vh $padding-base 4vh;
 			box-sizing: border-box;
 			background-size: cover !important;
-
-			@include smartphone {
-				padding-top: $padding-large * 2;
-			}
 			background-position: center !important;
+			z-index: 9999;
+
+			h2 {
+				@include smartphone {
+					font-size: 30px;
+				}
+			}
 		}
 		.home-pagination {
 			position: absolute;

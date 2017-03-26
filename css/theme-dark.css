@@ -3911,7 +3911,6 @@ button.close, .close {
   font-weight: 400; }
 
 .modal-content {
-  float: left;
   margin: 30px 0; }
 
 .modal-open .modal {
@@ -4005,26 +4004,27 @@ body.modal-open {
       transform: translateX(-50%); }
   .home-slider-title-main {
     color: #262626;
-    max-width: 600px;
-    margin: 0 auto 30px;
+    background: rgba(22, 22, 22, 0.7);
+    min-width: 100%;
+    min-height: 100%;
     position: relative;
-    padding: 0 45px; }
+    padding: 20vh; }
     .home-slider-title-main.inverted {
       color: #fff; }
-  .home-slider .swiper-slide {
-    padding: 0 15px; }
+  .home-slider .dark-slide {
+    background-color: rgba(22, 22, 22, 0.4); }
   .home.image-slider {
     padding-top: 0px;
     padding-bottom: 0;
     position: relative; }
     .home.image-slider .swiper-slide {
-      padding: 8vh 15px 4vh;
       box-sizing: border-box;
       background-size: cover !important;
-      background-position: center !important; }
+      background-position: center !important;
+      z-index: 9999; }
       @media (max-width: 479px) {
-        .home.image-slider .swiper-slide {
-          padding-top: 120px; } }
+        .home.image-slider .swiper-slide h2 {
+          font-size: 30px; } }
     .home.image-slider .home-pagination {
       position: absolute;
       bottom: 30px;
@@ -4224,6 +4224,30 @@ body.modal-open {
     background: #aaa;
     opacity: 1; }
 
+.about .button {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  width: 65px;
+  height: 65px; }
+  .about .button-video-play {
+    background-image: url("../img/play_button.png"); }
+  .about .button-gallery {
+    background-image: url("../img/gallery_button.png"); }
+.about img {
+  max-width: 100%;
+  border-radius: 155px; }
+.about .about-person {
+  padding: 30px 30px 0px 30px;
+  overflow: hidden; }
+.about .people {
+  padding-bottom: 60px; }
+  .about .people .about-white-box {
+    padding-bottom: 0;
+    margin-bottom: -40px; }
 @media (min-width: 1200px) {
   .about-counter {
     padding: 60px 0; } }
@@ -4272,7 +4296,7 @@ body.modal-open {
   position: relative; }
   .about-background-1 {
     background-image: url("../img/property-solutions.jpg");
-    background-position: center;
+    background-position: center bottom;
     background-size: cover; }
   .about-background-2 {
     background-color: #fff; }
@@ -4302,7 +4326,8 @@ body.modal-open {
 .about p {
   max-width: 500px;
   margin: 30px auto;
-  opacity: 0.9; }
+  opacity: 0.9;
+  padding: 0 30px; }
 
 .countdown-counter {
   display: block;
@@ -4655,7 +4680,7 @@ body.modal-open {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 100%;
-    font-size: 30px; }
+    font-size: 22px; }
     @media (max-width: 479px) {
       .social ul {
         font-size: 15px; } }
@@ -4717,10 +4742,10 @@ body.modal-open {
   min-height: auto;
   float: left;
   width: 100%;
-  padding-bottom: 90px; }
+  padding: 15px 0; }
   .footer-logo {
-    margin: 30px 0;
-    width: 220px;
+    margin: 0 0 20px 0;
+    width: 150px;
     height: auto; }
   .footer-newsletter {
     margin-top: 60px; }

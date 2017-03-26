@@ -4,11 +4,11 @@
 	min-height: auto;
 	float: left;
 	width: 100%;
-	padding-bottom: $padding-x-large;
+	padding: 15px 0;
 
 	&-logo {
-		margin: $margin-medium 0;
-		width: 220px;
+		margin: 0 0 20px 0;
+		width: 150px;
 		height: auto;
 	}
 	&-newsletter {

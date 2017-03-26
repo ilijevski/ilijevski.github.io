@@ -1,5 +1,36 @@
 .about {
+	.button {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: block;
+		cursor: pointer;
+		margin: auto;
+		width: 65px;
+		height: 65px;
+		&-video-play {
+			background-image: url('../img/play_button.png');
+		}
+		&-gallery {
+			background-image: url('../img/gallery_button.png');
+		}
+	}
+	img {
+		max-width: 100%;
+		border-radius: 155px;
+	}
+	.about-person {
+		padding: 30px 30px 0px 30px;
+		overflow: hidden;
+	}
+	.people {
+		padding-bottom: 60px;
 
+		.about-white-box {
+			padding-bottom: 0;
+			margin-bottom: -40px;
+		}
+	}
 	&-counter {
 		@include desktop {
 			padding: $padding-large 0;
@@ -65,7 +96,7 @@
 
 		&-1 {
 			background-image: url('../img/property-solutions.jpg');
-			background-position: center;
+			background-position: center bottom;
 	    background-size: cover;
 		}
 		&-2 {
@@ -106,5 +137,6 @@
 		max-width: 500px;
 		margin: $margin-medium auto;
 		opacity: 0.9;
+		padding: 0 30px;
 	}
 }
