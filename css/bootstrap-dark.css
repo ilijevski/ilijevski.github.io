@@ -5452,7 +5452,8 @@ button.close {
   .carousel-inner > .active,
   .carousel-inner > .next,
   .carousel-inner > .prev {
-    display: block; }
+    display: block;
+    height: 62vh; }
   .carousel-inner > .active {
     left: 0; }
   .carousel-inner > .next,

@@ -123,7 +123,6 @@
 	&-indicators {
 		position: relative;
 		margin: 0;
-		padding: $padding-medium 0 $padding-base 0;
 		float: left;
 		background: $main-light-color;
 		width: 100%;
@@ -133,16 +132,34 @@
 		font-size: 0;
 	}
 }
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+
+.carousel-inner > .item > .image-container {
+	max-height: 50vh;
+	height: 50vh;
+	overflow: hidden;
+
+	@include smartphone {
+		height: 35vh;
+	}
+}
+
+.carousel-inner > .item > p {
+	position: relative;
+	max-width: 500px;
+  margin: 30px auto;
+  opacity: 0.9;
+  padding: 0 30px;
+}
+
+.carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
 	margin: 0 auto;
+	max-width: 100%;
 
 	@include desktop {
 		width: auto;
-		height: 70vh;
 	}
 	@include tablet {
 		width: auto;
-		height: 70vh;
 	}
 	@include medium-tablet {
 		width: 100%;
@@ -151,5 +168,17 @@
 	@include smartphone {
 		width: 100%;
 		height: auto;
+	}
+}
+
+.carousel-inner > .active,{
+  @include smartphone {
+		height: 68vh;
+	}
+	@include tablet {
+		height: 70vh;
+	}
+	@include desktop {
+		height: 70vh;
 	}
 }

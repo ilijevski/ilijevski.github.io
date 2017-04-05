@@ -3775,7 +3775,6 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
   .carousel-indicators {
     position: relative;
     margin: 0;
-    padding: 30px 0 15px 0;
     float: left;
     background: #252525;
     width: 100%;
@@ -3784,24 +3783,48 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     bottom: 10px;
     font-size: 0; }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  margin: 0 auto; }
+.carousel-inner > .item > .image-container {
+  max-height: 50vh;
+  height: 50vh;
+  overflow: hidden; }
+  @media (max-width: 479px) {
+    .carousel-inner > .item > .image-container {
+      height: 35vh; } }
+
+.carousel-inner > .item > p {
+  position: relative;
+  max-width: 500px;
+  margin: 30px auto;
+  opacity: 0.9;
+  padding: 0 30px; }
+
+.carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
+  margin: 0 auto;
+  max-width: 100%; }
   @media (min-width: 1200px) {
-    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-      width: auto;
-      height: 70vh; } }
+    .carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
+      width: auto; } }
   @media (min-width: 480px) and (max-width: 1199px) {
-    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-      width: auto;
-      height: 70vh; } }
+    .carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
+      width: auto; } }
   @media (min-width: 480px) and (max-width: 991px) {
-    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    .carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
       width: 100%;
       height: auto; } }
   @media (max-width: 479px) {
-    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    .carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
       width: 100%;
       height: auto; } }
+
+@media (max-width: 479px) {
+  .carousel-inner > .active {
+    height: 68vh; } }
+@media (min-width: 480px) and (max-width: 1199px) {
+  .carousel-inner > .active {
+    height: 70vh; } }
+@media (min-width: 1200px) {
+  .carousel-inner > .active {
+    height: 70vh; } }
 
 body {
   background: #333; }
@@ -3820,7 +3843,9 @@ p {
   font-size: 19px; }
 
 a, .btn {
-  transition: all 100ms ease-in-out; }
+  transition: all 100ms ease-in-out;
+  position: relative;
+  z-index: 999; }
   a:hover, .btn:hover {
     opacity: 0.6; }
 
@@ -4008,16 +4033,16 @@ body.modal-open {
     min-width: 100%;
     min-height: 100%;
     position: relative;
-    padding: 20vh; }
+    padding: 20vh;
+    padding-top: 60vh;
+    margin-top: 0; }
     .home-slider-title-main.inverted {
       color: #fff; }
     @media (min-width: 480px) and (max-width: 1199px) {
       .home-slider-title-main {
-        padding: 20vh 10px 0px;
         font-size: 36px; } }
     @media (max-width: 479px) {
       .home-slider-title-main {
-        padding: 20vh 10px 0px;
         font-size: 30px; } }
   .home-slider .dark-slide {
     background-color: rgba(22, 22, 22, 0.4); }
@@ -4084,6 +4109,7 @@ body.modal-open {
 .navbar {
   border: none;
   background: #252525;
+  background: rgba(37, 37, 37, 0.8);
   text-align: center; }
   .navbar a {
     padding: 5px 15px;
@@ -4246,8 +4272,7 @@ body.modal-open {
   .about .button-gallery {
     background-image: url("../img/gallery_button.png"); }
 .about img {
-  max-width: 100%;
-  border-radius: 155px; }
+  max-width: 100%; }
 .about .about-person {
   padding: 30px 30px 0px 30px;
   overflow: hidden; }
@@ -4255,11 +4280,9 @@ body.modal-open {
   padding-bottom: 60px; }
   .about .people .about-white-box {
     padding-bottom: 0px;
-    margin-top: -57px;
-    padding-top: 62px; }
+    padding-top: 28px; }
   .about .people .about-black-box {
     background: #000;
-    padding-bottom: 199px;
     margin-bottom: -60px; }
 @media (min-width: 1200px) {
   .about-counter {
@@ -4318,7 +4341,7 @@ body.modal-open {
     background-position: center;
     background-size: cover; }
 .about-black-box {
-  min-height: 60vh;
+  min-height: 30vh;
   background: rgba(0, 0, 0, 0.8);
   color: white !important;
   padding: 60px;
@@ -4328,10 +4351,10 @@ body.modal-open {
   .about-black-box p {
     color: white !important; }
 .about-white-box {
-  min-height: 55vh;
+  min-height: 30vh;
   background: rgba(255, 255, 255, 0.9);
   color: black !important;
-  padding: 60px;
+  padding: 20px;
   padding-bottom: 90px;
   text-align: center; }
   .about-white-box p {

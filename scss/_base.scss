@@ -24,6 +24,8 @@ p {
 }
 a, .btn {
     transition: all 100ms ease-in-out;
+    position: relative;
+    z-index: 999;
     &:hover {
         opacity: 0.6;
     }
