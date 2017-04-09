@@ -430,3 +430,23 @@ button.swiper-pagination-bullet {
 		transform: rotate(360deg)
 	}
 }
+
+.swiper-video {
+	position:fixed;
+	left:0;
+	bottom:0;
+	z-index:-1;
+	width: 100%;
+	@include tablet {
+		width: auto;
+		height: 100%;
+	}
+	@include medium-tablet {
+		width: auto;
+		height: 100%;
+	}
+	@include smartphone {
+		width: auto;
+		height: 100%;
+	}
+}

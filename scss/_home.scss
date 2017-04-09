@@ -61,9 +61,11 @@
 				}
 				@include tablet {
 					font-size: 36px;
+					padding-top: 50vh;
 				}
 				@include smartphone {
 					font-size: 30px;
+					padding-top: 40vh;
 				}
 			}
 		}

@@ -1505,6 +1505,25 @@ button.swiper-pagination-bullet {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+.swiper-video {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%; }
+  @media (min-width: 480px) and (max-width: 1199px) {
+    .swiper-video {
+      width: auto;
+      height: 100%; } }
+  @media (min-width: 480px) and (max-width: 991px) {
+    .swiper-video {
+      width: auto;
+      height: 100%; } }
+  @media (max-width: 479px) {
+    .swiper-video {
+      width: auto;
+      height: 100%; } }
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
@@ -3821,10 +3840,10 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     height: 68vh; } }
 @media (min-width: 480px) and (max-width: 1199px) {
   .carousel-inner > .active {
-    height: 70vh; } }
+    height: 72vh; } }
 @media (min-width: 1200px) {
   .carousel-inner > .active {
-    height: 70vh; } }
+    height: 72vh; } }
 
 body {
   background: #333; }
@@ -4040,10 +4059,12 @@ body.modal-open {
       color: #fff; }
     @media (min-width: 480px) and (max-width: 1199px) {
       .home-slider-title-main {
-        font-size: 36px; } }
+        font-size: 36px;
+        padding-top: 50vh; } }
     @media (max-width: 479px) {
       .home-slider-title-main {
-        font-size: 30px; } }
+        font-size: 30px;
+        padding-top: 40vh; } }
   .home-slider .dark-slide {
     background-color: rgba(22, 22, 22, 0.4); }
   .home.image-slider {
@@ -4268,19 +4289,30 @@ body.modal-open {
   width: 65px;
   height: 65px; }
   .about .button-video-play {
-    background-image: url("../img/play_button.png"); }
+    position: relative;
+    left: 50%;
+    width: 85px;
+    height: 85px;
+    margin-left: -42px;
+    cursor: pointer;
+    display: inline-block;
+    background-image: url("../img/play_button.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50%; }
   .about .button-gallery {
     background-image: url("../img/gallery_button.png"); }
 .about img {
   max-width: 100%; }
 .about .about-person {
-  padding: 30px 30px 0px 30px;
+  padding: 0;
   overflow: hidden; }
 .about .people {
-  padding-bottom: 60px; }
+  padding-bottom: 0px; }
   .about .people .about-white-box {
-    padding-bottom: 0px;
-    padding-top: 28px; }
+    padding: 0;
+    overflow: hidden; }
   .about .people .about-black-box {
     background: #000;
     margin-bottom: -60px; }

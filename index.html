@@ -58,7 +58,7 @@
 		<div class="home-slider text-center">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<video autoplay loop muted style="position:fixed; left:0; bottom: 0; z-index:-1; width: 100%;">
+					<video autoplay loop muted class="swiper-video">
 					  <source src="vid/bounce.m4v" type="video/mp4">
 					</video>
 					<h2 class="home-slider-title-main white-color">Welcome to the SigmaPros<br/> family of companies.</h2>
@@ -137,7 +137,7 @@
 					<a src="#" class="btn btn-default" data-target="#property_solutions_gallery" data-toggle="modal">read more</a>
         </div>
 				<div class="col-md-6">
-					<a src="#" class="video-play"></a>
+					<a src="#" class="button-video-play" data-target="#property_solutions_video" data-toggle="modal" onclick="player.playVideo()"></a>
 				</div>
     </div>
 		<!-- NEWS MODAL -->
@@ -185,6 +185,28 @@
 								</li>
 							</ol>
 							<!-- / CAROUSEL INDICATORS -->
+						</div>
+					</div>
+				</div>
+				<!-- / NEWS MODAL CONTENT -->
+			</div>
+		</div>
+		<!-- / NEWS MODAL -->
+		<!-- NEWS MODAL -->
+		<div class="modal fade" id="property_solutions_video" role="dialog" tabindex="-1" onclick="player.stopVideo()">
+			<div class="modal-dialog">
+				<!-- NEWS MODAL CONTENT -->
+				<div class="modal-content shadow">
+					<a class="close" data-dismiss="modal" onclick="player.stopVideo()"> <span class="ti-close"></span></a>
+
+					<div class="modal-body">
+						<div class="carousel slide product-slide" id="property_solutions_gallery-carousel" style="padding-top:0">
+							<!-- CAROSUEL SLIDER -->
+							<div class="carousel-inner cont-slider">
+								<div style="position:relative;height:0;padding-bottom:56.25%">
+									<iframe id="player" src="https://www.youtube.com/embed/AznM1xv5H9k?ecver=2&rel=0&wmode=Opaque&enablejsapi=1" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -343,14 +365,18 @@
 				</div>
 				<div class="col-md-6 about-white-box">
 					<div class="row">
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/Aleksandra.jpg"/></div>
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/Vojislav.jpg"/></div>
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/Daniela.jpg"/></div>
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/Gordan.jpg"/></div>
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/Kristina.jpg"/></div>
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/David.jpg"/></div>
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/Cori.jpg"/></div>
-						<div class="col-lg-2 col-md-4 hidden-xs-down about-person"><img src="img/sigma-team/Rick.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Aleksandra.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Vojislav.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Daniela.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Gordan.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Kristina.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/David.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Cori.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Rick.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/David.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Cori.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Rick.jpg"/></div>
+						<div class="col-md-3 hidden-xs-down about-person"><img src="img/sigma-team/Cori.jpg"/></div>
 					</div>
 				</div>
 			</div>
@@ -497,10 +523,8 @@
 	<script src="js/vendor/jquery-1.11.2.min.js"></script>
 	<script src="js/vendor/swiper.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/vendor/jquery.countTo.js"></script>
-	<script src="js/vendor/jquery.inview.js"></script>
-	<script src="js/vendor/jquery.countdown.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoYT5yF0Gm_KfvZ0i8DpKDdeeT7f3LWg4"></script>
+	<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(function(){
@@ -523,6 +547,9 @@
 				$(window).on("scroll", refreshParallaxImages);
 				$(window).resize(refreshParallaxImages);
 		});
+
+		var player;
+    function onYouTubePlayerAPIReady() {player = new YT.Player('player');}
 	</script>
 </body>
 </html>

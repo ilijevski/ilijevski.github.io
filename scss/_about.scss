@@ -9,7 +9,18 @@
 		width: 65px;
 		height: 65px;
 		&-video-play {
+			position: relative;
+	    left: 50%;
+			width: 85px;
+			height: 85px;
+			margin-left: -42px;
+			cursor: pointer;
+			display: inline-block;
 			background-image: url('../img/play_button.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-top: 50%
 		}
 		&-gallery {
 			background-image: url('../img/gallery_button.png');
@@ -19,15 +30,15 @@
 		max-width: 100%;
 	}
 	.about-person {
-		padding: 30px 30px 0px 30px;
+		padding: 0;
 		overflow: hidden;
 	}
 	.people {
-		padding-bottom: 60px;
+		padding-bottom: 0px;
 
 		.about-white-box {
-			padding-bottom: 0px;
-	    padding-top: 28px;
+			padding: 0;
+			overflow: hidden;
 		}
 		.about-black-box {
 			background: #000;
