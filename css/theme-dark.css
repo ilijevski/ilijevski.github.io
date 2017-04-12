@@ -4297,7 +4297,7 @@ body.modal-open {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 50%; }
+    margin-top: 30vh; }
   .about .button-gallery {
     background-image: url("../img/gallery_button.png"); }
 .about img {
