@@ -146,7 +146,7 @@
 .carousel-inner > .item > p {
 	position: relative;
 	max-width: 500px;
-  margin: 30px auto;
+	margin: 0 auto;
   opacity: 0.9;
   padding: 0 30px;
 }
@@ -179,6 +179,6 @@
 		height: 72vh;
 	}
 	@include desktop {
-		height: 72vh;
+		height: 545px;
 	}
 }
