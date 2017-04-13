@@ -4272,6 +4272,10 @@ body.modal-open {
     background: #aaa;
     opacity: 1; }
 
+.about .video-button-placeholder {
+  height: 100%;
+  position: absolute;
+  right: 0; }
 .about .button {
   background-position: center;
   background-repeat: no-repeat;
@@ -4282,18 +4286,19 @@ body.modal-open {
   width: 65px;
   height: 65px; }
   .about .button-video-play {
-    position: relative;
-    left: 50%;
     width: 85px;
     height: 85px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-top: -42px;
     margin-left: -42px;
     cursor: pointer;
     display: inline-block;
     background-image: url("../img/play_button.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 30vh; }
+    background-size: cover; }
   .about .button-gallery {
     background-image: url("../img/gallery_button.png"); }
 .about img {
@@ -4367,7 +4372,7 @@ body.modal-open {
     background-size: cover; }
   .about-background-4 {
     background-image: url("../img/sigma-people.jpg");
-    background-position: center;
+    background-position: center 64%;
     background-size: cover; }
 .about-black-box {
   min-height: 30vh;
