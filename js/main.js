@@ -21,7 +21,8 @@ var swiper = new Swiper('.home-slider', {
     pagination: '.home-pagination',
     paginationClickable: true,
     nextButton: '.home-slider-next',
-    prevButton: '.home-slider-prev'
+    prevButton: '.home-slider-prev',
+    speed: 700,
 });
 
 // smoth scroll

@@ -3786,12 +3786,12 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 
 /* Main carousel style */
 .carousel {
-  width: 100%;
   float: left;
   background: #252525;
   text-align: center;
   padding: 15px 0 0; }
   .carousel-indicators {
+    opacity: 0.9;
     position: relative;
     margin: 0;
     float: left;
@@ -3803,26 +3803,28 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     font-size: 0; }
 
 .carousel-inner > .item > .image-container {
-  max-height: 50vh;
-  height: 50vh;
   overflow: hidden; }
   @media (max-width: 479px) {
     .carousel-inner > .item > .image-container {
       height: 35vh; } }
 
 .carousel-inner > .item > p {
-  position: relative;
-  max-width: 500px;
+  position: absolute;
+  bottom: 10px;
+  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   opacity: 0.9;
-  padding: 0 30px; }
+  background: #252525;
+  padding: 10px 30px; }
 
 .carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
   margin: 0 auto;
   max-width: 100%; }
   @media (min-width: 1200px) {
     .carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
-      width: auto; } }
+      width: auto;
+      max-height: 86vh; } }
   @media (min-width: 480px) and (max-width: 1199px) {
     .carousel-inner > .item > .image-container > img, .carousel-inner > .item > .image-container > a > img {
       width: auto; } }
@@ -3837,13 +3839,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 
 @media (max-width: 479px) {
   .carousel-inner > .active {
-    height: 68vh; } }
-@media (min-width: 480px) and (max-width: 1199px) {
-  .carousel-inner > .active {
-    height: 72vh; } }
-@media (min-width: 1200px) {
-  .carousel-inner > .active {
-    height: 545px; } }
+    height: 50vh; } }
 
 body {
   background: #333; }

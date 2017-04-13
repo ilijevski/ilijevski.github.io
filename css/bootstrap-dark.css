@@ -5173,7 +5173,7 @@ button.close {
 
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 800px;
+    width: 70%;
     margin: 30px auto; }
 
   .modal-content {
@@ -5452,8 +5452,7 @@ button.close {
   .carousel-inner > .active,
   .carousel-inner > .next,
   .carousel-inner > .prev {
-    display: block;
-    height: 62vh; }
+    display: block; }
   .carousel-inner > .active {
     left: 0; }
   .carousel-inner > .next,
