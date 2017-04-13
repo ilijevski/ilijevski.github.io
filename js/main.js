@@ -22,7 +22,7 @@ var swiper = new Swiper('.home-slider', {
     paginationClickable: true,
     nextButton: '.home-slider-next',
     prevButton: '.home-slider-prev',
-    speed: 700,
+    speed: 750,
 });
 
 // smoth scroll
